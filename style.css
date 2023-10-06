@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:"Kumbh Sans", serif;
+}
+body{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    width: 80w;
+}
+.nav{
+    background-color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 5px 20px;
+}
+.navbar h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+.navbar .nav-links{
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    gap: 20px;
+}
+.navbar .nav-links a{
+    text-decoration: none;
+    color: hsl(220, 14%, 75%);
+}
+.profile{
+    display: flex;
+    justify-content: flex-end;
+}
+.profile img{
+    padding: 10px;
+}
+.maincontent{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "images content";
+}
+.contentimages{
+    grid-area: images;
+    padding: 20px;
+}
+.mainimages img{
+    border-radius: 20px;
+}
+.subimages{
+    display: flex;
+    justify-content: space-around;
+}
+.subimages img{
+    border-radius: 10px;
+    /* margin: 10px; */
+}
+.subimage1{
+    padding: 1px;
+    opacity: 0.4;
+    border: 3px solid hsl(26, 100%, 55%);
+}
+.contentinfo{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 400px;
+}
+.heading{
+    color:hsl(26, 100%, 55%);
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.subheading{
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.contentinfo .p{
+    color:hsl(220, 14%, 75%);
+    font-size: 16px;
+}
+.price{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.price .price1{
+    font-weight: 700;
+    font-size: 18px;
+}
+.price .price1 span{
+    width: 20px;
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    font-size: 13px;
+    margin: 20px;
+}
+.price .price2{
+    color:hsl(220, 14%, 75%);
+}
+.cart{
+    display: flex;
+    justify-content: space-between;
+}
+.cart p{
+    background-color: hsl(223, 64%, 98%);
+    color: hsl(26, 100%, 55%);
+    padding: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.cart p span{
+    font-weight: 200px;
+    padding: 10px;
+    color: black;
+}
+.cart .mycart p{
+    display: flex;
+    justify-content: flex-start;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    border-radius: 5px;
+}
+.cart .mycart p img{
+    margin: auto 20px;
+}
